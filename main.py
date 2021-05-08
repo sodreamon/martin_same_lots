@@ -83,7 +83,7 @@ for _def_box in [0]:
             _price = chart_data_sr.iloc[_index_num]
 
             if len(position_list) < 1 :
-                position_list.append([bal*bet_size, pre_price]) # [포지션사이즈, 진입가격]
+                position_list.append([trading_bal*bet_size, pre_price]) # [포지션사이즈, 진입가격]
 
             if pre_price < lowest_price :
                 lowest_price = pre_price # 포지션 진입 중 최저가격 찾기
