@@ -62,7 +62,7 @@ for _def_box in [0]:
                 first_data_price -= 1
                 data_sr = data_sr.append(pd.Series({0:first_data_price}), ignore_index=True)
 
-            print("\r",str(r1)+" ",end="")
+            print("\r",str(r1)+" ")
         print()
 
         return data_sr
@@ -155,7 +155,7 @@ for _def_box in [0]:
             #     # "PositionList":position_list
             #     },ignore_index=True)
 
-            print("\r",str(_index_num)+" ",end="")
+            print("\r",str(_index_num)+" ")
         print()
 
         # pd.set_option("display.max_rows",100000000000)
