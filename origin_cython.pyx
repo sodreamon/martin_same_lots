@@ -84,14 +84,14 @@ def trading(chart_data_sr, bal, bet_size) :
     monitoring_df = pd.DataFrame() # 해당 전략이 정상적으로 작동하는지 확인하는 데이터프레임
 
     cdef int _index_num = 0
-    cdef double pre_price = 0
-    cdef double _price = 0
-    profit = 0
-    cdef double position_size = 0
-    cdef double position_price = 0
-    cdef double _position_profit = 0
-    cdef double last_position_price = 0
-    cdef double position_size_1 = 0
+    cpdef pre_price = 0
+    cpdef _price = 0
+    cpdef profit = 0
+    cpdef position_size = 0
+    cpdef position_price = 0
+    cpdef _position_profit = 0
+    cpdef last_position_price = 0
+    cpdef position_size_1 = 0
 
     
     for _index_num in range(1,len(chart_data_sr)) :
