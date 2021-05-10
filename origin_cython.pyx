@@ -86,7 +86,7 @@ def trading(chart_data_sr, bal, bet_size) :
     cdef int _index_num = 0
     cdef double pre_price = 0
     cdef double _price = 0
-    cdef double profit = 0
+    profit = 0
     cdef double position_size = 0
     cdef double position_price = 0
     cdef double _position_profit = 0
@@ -196,5 +196,5 @@ db.session.commit()
 print(trading_df)
 cdef double used_t = time.time() - start_t
 print(used_t)
-trading_df["Balance"].iplot(kind="line")
+#trading_df["Balance"].iplot(kind="line")
 
