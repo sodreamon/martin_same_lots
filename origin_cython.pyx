@@ -50,10 +50,10 @@ db.create_all()
 def making_new_chart_data(chart_data_len):
 
     data_sr = pd.Series({0:0})
-    cdef int first_data_price = 0
+    cdef double first_data_price = 0
 
-    cdef int r1 =0
-    cdef int _1_or_2 = 0
+    cdef double r1 =0
+    cdef double _1_or_2 = 0
     for r1 in range(0,chart_data_len) :
     
         _1_or_2 = random.randint(1,2)
@@ -84,13 +84,13 @@ def trading(chart_data_sr, bal, bet_size) :
     monitoring_df = pd.DataFrame() # 해당 전략이 정상적으로 작동하는지 확인하는 데이터프레임
 
     cdef int _index_num = 0
-    cdef int pre_price = 0
-    cdef int _price = 0
+    cdef double pre_price = 0
+    cdef double _price = 0
     cdef double profit = 0
     cdef double position_size = 0
-    cdef int position_price = 0
+    cdef double position_price = 0
     cdef double _position_profit = 0
-    cdef int last_position_price = 0
+    cdef double last_position_price = 0
     cdef double position_size_1 = 0
 
     
