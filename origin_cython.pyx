@@ -21,7 +21,7 @@ cf.go_offline(connected=True)
 
 # for _base in [0] :
 # 차트생성시 틱 수
-cdef int chart_data_len = 10000000
+cdef int chart_data_len = 1000
 # 자본금
 cdef double bal = 100000
 cdef double bet_size = 1/10000
