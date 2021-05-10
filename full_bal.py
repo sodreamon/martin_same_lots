@@ -20,7 +20,7 @@ for _importing in [0]:
 
 for _base in [0] :
     # 차트생성시 틱 수
-    chart_data_len = 1000
+    chart_data_len = 10000000
     # 자본금
     bal = 100000
     bet_size = 1/10000
